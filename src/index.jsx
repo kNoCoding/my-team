@@ -1,9 +1,13 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './RootCmp.jsx'
+
+import { BrowserRouter as Router } from 'react-router-dom'
+import RootCmp from './RootCmp.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   // <React.StrictMode>
-  <App />
+  <Router>
+    <RootCmp />
+  </Router>
   // </React.StrictMode>,
 )
